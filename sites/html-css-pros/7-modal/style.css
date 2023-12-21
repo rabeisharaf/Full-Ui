@@ -1,0 +1,128 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url("../../../assets/c1.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  font-family: monospace;
+}
+
+/* modal */
+.modal {
+  background: white;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  max-width: 400px;
+}
+.modal header {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.modal .modalbtn {
+  margin: 2rem auto;
+  background: rgb(63, 16, 16);
+  color: white;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  font-size: 1.1rem;
+}
+.modalbtn:hover {
+  background: rgb(64, 34, 34);
+}
+/* end of modal */
+
+/* modal contant */
+.content {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    rgba(130, 94, 94, 0.692),
+    rgba(113, 36, 36, 0.599)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0%);
+  -webkit-transform: scale(0%);
+  -moz-transform: scale(0%);
+  -ms-transform: scale(0%);
+  -o-transform: scale(0%);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.showcontent {
+  transform: scale(100%);
+  -webkit-transform: scale(100%);
+  -moz-transform: scale(100%);
+  -ms-transform: scale(100%);
+  -o-transform: scale(100%);
+}
+.info {
+  background: white;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  max-width: 400px;
+}
+.info .xbtn {
+  color: rgb(72, 32, 32);
+  font-size: 1.5rem;
+  float: right;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  cursor: pointer;
+}
+.xbtn:hover {
+  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -ms-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
+}
+.info header {
+  clear: both;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 2rem;
+}
+/* end of modal contant */

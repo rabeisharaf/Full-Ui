@@ -1,0 +1,116 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background: #f1f5f8;
+  font-family: monospace;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+:root {
+  --transtion-var: all 0.3s linear;
+}
+
+/* nav */
+nav {
+  background: white;
+  height: 3rem;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10%;
+}
+nav .navlogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 100%;
+}
+.navlogo img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+nav .links {
+  text-align: center;
+}
+.links .active {
+  color: cadetblue;
+  font-weight: 900;
+}
+nav .links a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+nav .links a:hover {
+  color: cadetblue;
+}
+/* end of nav */
+
+/* content */
+.content {
+  min-height: calc(100vh - 3rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.content .item {
+  background: rgb(28, 28, 28);
+  color: white;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 1rem;
+  max-width: 600px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.item .color {
+  color: rgb(28, 127, 180);
+  text-transform: uppercase;
+}
+.content .btn {
+  border: 2px solid black;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-transform: uppercase;
+  transition: var(--transtion-var);
+  -webkit-transition: var(--transtion-var);
+  -moz-transition: var(--transtion-var);
+  -ms-transition: var(--transtion-var);
+  -o-transition: var(--transtion-var);
+}
+.content .btn:hover {
+  background: black;
+  color: white;
+}
+/* end of content */

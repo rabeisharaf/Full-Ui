@@ -1,0 +1,293 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.5rem;
+  font-family: monospace;
+  letter-spacing: 1px;
+  background: #f1f5f8;
+}
+
+/* nav */
+nav {
+  width: 100%;
+  height: 3rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0% 10%;
+  font-weight: 900;
+}
+nav img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+/* end of nav */
+
+/* body */
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem 2rem;
+  min-height: calc(100vh - 3rem);
+  max-width: 600px;
+  margin: auto;
+}
+.body .submitform {
+  background: white;
+  padding: 2rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 100%;
+}
+.submitform header {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.submitform > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.submitform input {
+  width: 100%;
+}
+.submitform input[type="text"] {
+  padding-left: 0.3rem;
+  color: cadetblue;
+  font-size: 1.2rem;
+  background: #f1f5f8;
+  border-color: transparent;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+.submitform input[type="submit"] {
+  background: cadetblue;
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.submitform input[type="submit"]:hover {
+  background: rgb(38, 79, 81);
+}
+.submitform .err {
+  font-size: 0.9rem;
+  width: fit-content;
+  color: rgb(134, 68, 68);
+  margin-top: 0.5rem;
+}
+.body .loading {
+  font-size: 1.2rem;
+  width: fit-content;
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin: 2rem 0px;
+}
+.body .items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+.items .item {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(38, 79, 81, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.item header {
+  padding-left: 2rem;
+}
+.item .icons {
+  font-size: 0.8rem;
+}
+.item .icons i {
+  cursor: pointer;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.item .icons i:hover {
+  transform: scale(120%);
+  -webkit-transform: scale(120%);
+  -moz-transform: scale(120%);
+  -ms-transform: scale(120%);
+  -o-transform: scale(120%);
+}
+.icons .edit {
+  color: green;
+}
+.icons .del {
+  color: rgb(114, 56, 56);
+}
+.delitem header {
+  text-decoration: line-through;
+  padding-left: 0rem;
+  flex: 2;
+}
+.delitem .selected {
+  font-size: 1rem;
+  color: green;
+}
+@media (min-width: 700px) {
+  .submitform div {
+    flex-direction: row;
+    gap: 0px;
+  }
+  .submitform input[type="submit"] {
+    width: 150px;
+  }
+}
+/* end of body */
+
+/* editpage */
+.editpage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem;
+  align-items: center;
+}
+.editpage .editform {
+  background: white;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.editform header {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.editform div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.editform input[type="number"] {
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+}
+.editform input[type="text"] {
+  background: #f1f5f8;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.editform div input {
+  width: 100%;
+  flex: 3;
+}
+.editform div label {
+  font-size: 1.3rem;
+  flex: 2;
+}
+.editform button {
+  cursor: pointer;
+  background: cadetblue;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.editform button:hover {
+  background: rgb(12, 63, 64);
+}
+.editform .err {
+  font-size: 0.9rem;
+  color: rgb(114, 56, 56);
+  width: fit-content;
+}
+.editpage a {
+  margin-top: 3rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  background: black;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0px 0px 10px cadetblue;
+}
+/* end of editpage */

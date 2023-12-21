@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="../../../fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <!-- css style -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <nav>
+      <img src="../../../assets/p1.jpg" alt="" />
+      <header>Task Manager</header>
+    </nav>
+    <div class="body">
+      <form class="submitform">
+        <header>task manager</header>
+        <div>
+          <input type="text" placeholder="e.g wash dishes" /><input
+            type="submit"
+            value="submit"
+          />
+        </div>
+        <div class="err">there was an error</div>
+      </form>
+      <div class="loading">loading....</div>
+      <div class="items">
+        <div class="item">
+          <header>Task Name</header>
+          <div class="icons">
+            <a href="./editpage.html"
+              ><span class="edit"
+                ><i class="fa-solid fa-pen-to-square"></i></span
+            ></a>
+            <span class="del"><i class="fa-solid fa-trash"></i></span>
+          </div>
+        </div>
+        <div class="item delitem">
+          <span class="selected"
+            ><i class="fa-regular fa-circle-check"></i
+          ></span>
+          <header>Task Name</header>
+          <div class="icons">
+            <a href="./editpage.html"
+              ><span class="edit"
+                ><i class="fa-solid fa-pen-to-square"></i></span
+            ></a>
+            <span class="del"><i class="fa-solid fa-trash"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

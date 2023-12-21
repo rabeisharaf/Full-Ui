@@ -1,0 +1,158 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  letter-spacing: 1px;
+  font-family: monospace;
+  background: #f1f5f8;
+}
+
+/* sidebar */
+.sidebar {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1rem 0%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  position: fixed;
+  z-index: 2;
+}
+.showsidebar {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+}
+.navlogo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.navlogo .xbtn {
+  font-size: 2rem;
+  color: rgb(132, 74, 74);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  cursor: pointer;
+}
+.xbtn:hover {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.logo img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.links {
+  width: 100%;
+  flex: 2;
+}
+.links a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  display: block;
+  font-size: 1.5rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.links a:hover {
+  background: cadetblue;
+  color: white;
+  padding-left: 1rem;
+}
+.social i {
+  color: cadetblue;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.social i:hover {
+  transform: scale(130%);
+  -webkit-transform: scale(130%);
+  -moz-transform: scale(130%);
+  -ms-transform: scale(130%);
+  -o-transform: scale(130%);
+}
+.navbtn {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  color: cadetblue;
+  font-size: 2rem;
+  animation: navbtn infinite 2s linear;
+  -webkit-animation: navbtn infinite 2s linear;
+  cursor: pointer;
+}
+@keyframes navbtn {
+  0% {
+    font-size: 2rem;
+  }
+  25% {
+    font-size: 2.5rem;
+  }
+  50% {
+    font-size: 3rem;
+  }
+  75% {
+    font-size: 2.5rem;
+  }
+  100% {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 700px) {
+  .sidebar {
+    width: 400px;
+  }
+}
+/* end of sidebar */
